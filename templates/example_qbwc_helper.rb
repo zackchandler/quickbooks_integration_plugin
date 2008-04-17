@@ -1,0 +1,2 @@
+module QbwcHelper
+end

@@ -1,0 +1,12 @@
+<QBWCXML>
+   <AppName>QuickBooks Plugin Example</AppName>
+   <AppID></AppID>
+   <AppURL>http://localhost1:3000/apis/quickbooks/api</AppURL>
+   <AppDescription>QuickBooks Plugin Example</AppDescription>
+   <AppSupport>http://idnforums.intuit.com/</AppSupport>
+   <UserName>CHANGME</UserName>
+   <OwnerID></OwnerID>
+   <FileID></FileID>
+   <QBType>QBFS</QBType>
+   <Style>RPC</Style>
+</QBWCXML>
