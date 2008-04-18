@@ -1,6 +1,15 @@
 class QbwcApi < ActionWebService::API::Base
   inflect_names false
 
+  # --- [ QBWC server version control ] ---
+  # Expects:
+  #   * string ticket  = A GUID based ticket string to maintain identity of QBWebConnector 
+  # Returns string: 
+  #   * Return a string describing the server version and any other information that you want your user to see.
+  api_method :serverVersion, 
+             :expects => [{:ticket => :string}], 
+             :returns => [:string]
+             
   # --- [ QBWC version control ] ---
   # Expects:
   #   * string strVersion = QBWC version number

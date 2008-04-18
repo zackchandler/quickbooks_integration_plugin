@@ -18,4 +18,4 @@ safe_copy File.join(plugin_root, 'templates/example_qbwc_api.rb'), File.join(app
 safe_copy File.join(plugin_root, 'templates/example_qbwc_controller_test.rb'), File.join(app_root, 'test/functional/qbwc_controller_test.rb')
 safe_copy File.join(plugin_root, 'templates/example_qbwc.qwc'), File.join(app_root, 'config/qbwc.qwc')
 
-puts IO.read(File.join(File.dirname(__FILE__), 'README'))
+puts IO.read(File.join(File.dirname(__FILE__), 'README.markdown'))

@@ -3,6 +3,15 @@
 class QbwcController < ApplicationController
   before_filter :set_soap_header
 
+  # --- [ QBWC server version control ] ---
+  # Expects:
+  #   * string ticket  = A GUID based ticket string to maintain identity of QBWebConnector 
+  # Returns string: 
+  #   * Return a string describing the server version and any other information that you want your user to see.
+  def serverVersion(ticket)
+    'Describe your app version here...'
+  end
+
   # --- [ QBWC version control ] ---
   # Expects:
   #   * string strVersion = QBWC version number

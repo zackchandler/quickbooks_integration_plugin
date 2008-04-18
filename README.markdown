@@ -12,7 +12,7 @@ On installation this plugin creates the following files:
 * app/controllers/qbwc_controller.rb
 * app/apis/qbwc_api.rb
 * app/helpers/qbwc_helper.rb
-* test/functional/qbwc_controller_test.rb
+* test/functional/qbwc_controller\_test.rb
 * config/qbwc.qwc
 
 The QbwcController includes a very simple example of querying QuickBooks and displaying a customer list.
