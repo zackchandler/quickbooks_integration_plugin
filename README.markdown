@@ -46,7 +46,7 @@ To implement your own QuickBooks integration, implement the functions outlined i
 
 ### Installation ###
 
-	$ ./script/plugin install http://svn.depixelate.com/plugins/quickbooks_integration
+	$ ./script/plugin install git://github.com/zackchandler/quickbooks_integration_plugin.git
 
 Upon installation, the template files will be copied over to your app.
 
