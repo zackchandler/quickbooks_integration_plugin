@@ -5,8 +5,9 @@
    <AppDescription>QuickBooks Plugin Example</AppDescription>
    <AppSupport>http://idnforums.intuit.com/</AppSupport>
    <UserName>CHANGME</UserName>
-   <OwnerID></OwnerID>
-   <FileID></FileID>
+   <!-- OwnerID and FileID should be unique GUIDs - you can change these values for your app -->
+   <OwnerID>{91F3B9B4-34F1-4fcc-B1EE-566DE1813D20}</OwnerID>
+   <FileID>bc1286156fa27ecb6ae6d3ae6c96e12193aaf63f</FileID>
    <QBType>QBFS</QBType>
    <Style>RPC</Style>
 </QBWCXML>

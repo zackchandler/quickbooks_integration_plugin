@@ -21,16 +21,28 @@ To implement your own QuickBooks integration, implement the functions outlined i
 
 ### Requirements ###
 
-1) Install actionwebservice gem (if it's not already installed)
-
-	sudo gem install actionwebservice
-
-2) Add a route for the qbwc controller to config/routes.rb
+1) Add a route for the qbwc controller to config/routes.rb
 
 	# example Quickbooks Web Connector api route
 	map.quickbooks_api 'apis/quickbooks/api', :controller => 'qbwc', :action => 'api'
-	
-3) The QBWC will only communicate over SSL so make sure your app has a valid and trusted SSL cert installed.  For testing the QBWC will speak to localhost over http.
+
+2) Add the following block to config/environment.rb
+
+    Rails::Initializer.run do |config|
+      ...
+      config.load_paths += %W( #{RAILS_ROOT}/app/apis )
+      config.load_paths += Dir["#{RAILS_ROOT}/vendor/gems/**"].map do |dir|
+        File.directory?(lib = "#{dir}/lib") ? lib : dir
+      end
+      ...
+    end
+
+3) Add the following lines to an initializer or the bottom of config/environment.rb
+
+    require 'actionwebservice'
+    require 'action_web_service_ext'
+
+4) The QBWC will only communicate over SSL so make sure your app has a valid and trusted SSL cert installed.  For testing the QBWC will speak to localhost over http.
 
 ### Installation ###
 
